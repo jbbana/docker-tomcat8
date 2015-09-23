@@ -5,7 +5,7 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 
 ENV TOMCAT_MAJOR 8
 ENV TOMCAT_VERSION 8.0.21
-ENV TOMCAT_TGZ_URL http://www.apache.org/dist/tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz
+ENV TOMCAT_TGZ_URL http://www.archive.apache.org/dist/tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz
 
 RUN mkdir -p /usr/local && \
 	wget -qO- "$TOMCAT_TGZ_URL" | gunzip | tar x -C /usr/local/ && \
